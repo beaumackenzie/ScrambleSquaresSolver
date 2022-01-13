@@ -139,7 +139,8 @@ def twobytwo(rotations1, rotations2, rotations3, rotations4):
                                 
                                 order = [rotationorder[0][i], rotationorder[1][j], rotationorder[2][k], rotationorder[3][m]]
         
-        
+                                #repeating already true parts of the if statement is slightly redundant, but it was efficient to copy and paste
+            
                                 if [order[0][1], order[1][3]] in possiblematch and [order[1][2], order[3][0]] in possiblematch and [order[2][1], order[3][3]] in possiblematch:        
                                     print("partial success")
                                     
@@ -183,6 +184,7 @@ def threebythree(r0,r1,r2,r3,r4,r5,r6,r7,r8):
         rsorders = permsallrs[l]
         
         order2 = []
+        
         
         for a in range(0,4):
             
